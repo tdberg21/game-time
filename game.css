@@ -1,5 +1,5 @@
-#game {
-  border: 1px dashed;
+#canvas {
+  border: 1px solid green;
   margin: auto;
   display: block;
 }

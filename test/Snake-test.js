@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 
-describe('Box', function () {
+describe('Snake', function () {
   it('should return true', function () {
     assert.equal(true, true);
   });
