@@ -1,5 +1,48 @@
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: green;
+}
+
+h1 {
+  margin-left: 47%;
+}
+
+.main {
+  display: flex;
+}
+
+.instructions-container {
+  margin-top: 65px;
+  padding: 10px;
+  width: 342px;
+  margin-left: 25px;
+  background-color: #6cce4d;
+  height: 230px;
+  margin-right: 25px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
 #canvas {
-  border: 1px solid green;
-  margin: auto;
+  border: 8px solid black;
+  margin: 10px;
   display: block;
+  background-color: white;
+}
+
+.score-container {
+  margin-top: 65px;
+  margin-left: 25px;
+  padding-top: 20px;
+  font-size: 30px; 
+  background-color: #6cce4d;
+  height: 230px;
+}
+
+.paper {
+  display: inline;
+  padding: 10px;
 }

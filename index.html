@@ -6,16 +6,27 @@
   <link href="./game.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <canvas id="canvas" height="600" width="600"></canvas>
-  <!-- <button id="start-btn">Start the Game</button> -->
   <h1>Snake</h1>
-  <p id="rules">Move the snake to eat the apples, don't hit the wall or you are dead!</p>
-  <p id="rules">You have three lives.</p>
-  <p id="instructions">Press S to start.</p>
-  <p id="instructions">Press P to Pause.</p>
-  <p id="instructions">Press the arrow keys to move up, down, left, right.</p>
-  <p id="lives">lives: <span id="lives-number">0</span></p>
-  <p id="score">score: <span id="score-number">0</span></p>
+  <section class="main">
+    <article class="instructions-container">
+      <h2>Instructions</h2>
+      <p>Move the snake to eat the apples, don't hit the wall or you are dead!</p>
+      <p>You have three lives.</p>
+      <p>Press S to start.</p>
+      <p>Press P to Pause.</p>
+      <p>Press the arrow keys to move up, down, left, right.</p>
+    </article>
+    <canvas id="canvas" height="600" width="600"></canvas>
+    <!-- <button id="start-btn">Start the Game</button> -->
+    <article class="score-container">
+      <p class="paper">lives:
+        <span id="lives-number">0</span>
+      </p>
+      <p class="paper">score:
+        <span id="score-number">0</span>
+      </p>
+    </article>
+  </section>
   <script src="main.bundle.js"></script>
 </body>
 </html>
