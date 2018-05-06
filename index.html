@@ -7,34 +7,37 @@
   <link rel="icon" type="image/png" href="http://www.trickedbythelight.com/tbtl/images/s-snaketrans.gif">
 </head>
 <body>
-  <h1>
-    <span>
-      <img class="snake-s" src="http://www.trickedbythelight.com/tbtl/images/s-snaketrans.gif" alt="Snake shaped like an s">
-    </span>
-    nake</h1>
-  <section class="main">
-    <article class="instructions-container">
-      <h2>Instructions</h2>
-      <p>Move the snake to eat the apples, don't hit the wall or you are dead!</p>
-      <p>You have three lives.</p>
-      <p>Press S to start.</p>
-      <p>Press P to Pause.</p>
-      <p>Press the arrow keys to move up, down, left, right.</p>
-    </article>
-    <canvas id="canvas" height="600" width="600"></canvas>
-    <article class="score-container">
-      <p class="score">lives:
-        <span id="lives-number"></span>
-      </p>
-      <p class="score">score:
-        <span id="score-number">0</span>
-      </p>
-    </article>
-  </section>
-  <section class="game-over-container">
-    <h3 class="game-over game-over-display">GAME OVER!!</h3>
-    <img src="https://media.giphy.com/media/iHnYEDaV1RSg0/giphy.gif" alt="snape gif" class="game-over-image game-over-display">
-  </section>
-  <script src="main.bundle.js"></script>
-</body>
-</html>
+  <section class="header-container">
+    <h1>
+      <span>
+        <img class="snake-s" src="./lib/images/slytherin-logo.png" alt="Snake shaped like an s">
+      </span>lytherin Snake</h1>
+    </section>
+    <section class="main">
+      <article class="instructions-container">
+        <h2>Instructions</h2>
+        <p>Move the snake to eat the apples, don't hit the wall or you are dead!</p>
+        <p>You have three lives.</p>
+        <p>Press S to start.</p>
+        <p>Press P to Pause.</p>
+        <p>Press the arrow keys to move up, down, left, right.</p>
+      </article>
+      <canvas id="canvas" height="600" width="600"></canvas>
+      <article class="score-container">
+        <p class="score">lives:
+          <span id="lives-number">3</span>
+        </p>
+        <p class="score">score:
+          <span id="score-number">0</span>
+        </p>
+      </article>
+    </section>
+    <section class="game-over-container">
+      <h3 class="game-over game-over-display">GAME OVER!!</h3>
+      <p class="reset-game-paragraph game-over-display">Press R to reset the game.</p>
+      <img src="https://media.giphy.com/media/AisOYaOZdrS1i/giphy.gif" alt="snape gif" class="game-over-image game-over-display">
+    </section>
+    <script src="main.bundle.js"></script>
+  </body>
+  </html>
+  
