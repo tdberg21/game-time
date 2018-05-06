@@ -58,11 +58,16 @@ h2 {
   flex-direction: column;
   left: 560px;
   top: 15%;
+  color: red;
 }
 
 .game-over {
-  color: red;
   font-size: 3em;
+  margin-bottom: 0;
+}
+
+.reset-game-paragraph {
+  text-align: center;
 }
 
 .game-over-display {
