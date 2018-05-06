@@ -55,10 +55,9 @@ h2 {
 .game-over-container {
   display: flex;
   position: absolute;
-  width: 100%;
-  /* justify-content: center; */
+  flex-direction: column;
   left: 560px;
-  top: 30%;
+  top: 15%;
 }
 
 .game-over {
