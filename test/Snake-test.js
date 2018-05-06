@@ -82,6 +82,19 @@ describe('Snake', () => {
     assert.equal(actual, expected)
   });
 
-  // if head.x 
+  it('should be able to grow if it eats an apple', () => {
+    for (let x = 0; x < 40; x += 10) {
+      let block = new Block(x, 10, 10, 10);
+
+      snake.snakeBody.push(block);
+    }
+
+    snake.moveS('down');
+    let actual = snake.tail.y;
+    let expected = snake.head.y + snake.speed;
+
+    assert.equal(actual, expected)
+  });
+
 
 });
