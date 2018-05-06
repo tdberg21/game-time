@@ -88,13 +88,40 @@ describe('Snake', () => {
 
       snake.snakeBody.push(block);
     }
+    let oldSnakeLength = snake.snakeBody.length;
 
-    snake.moveS('down');
-    let actual = snake.tail.y;
-    let expected = snake.head.y + snake.speed;
+    snake.grow();
+    let newSnakeLength = snake.snakeBody.length;
 
-    assert.equal(actual, expected)
+    assert.isAbove(newSnakeLength, oldSnakeLength);
   });
 
+  it('should die if it hits itself', () => {
+    for (let x = 0; x < 40; x += 10) {
+      let block = new Block(x, 10, 10, 10);
 
+      snake.snakeBody.push(block);
+    }
+
+    snake.head = snake.snakeBody.shift();
+    snake.snakeBody[0].x = snake.head.x;
+    snake.killSelf();
+
+    assert.equal(snake.die, true)
+  });
+
+  it('should die if it hits the wall', () => {
+    for (let x = 0; x < 40; x += 10) {
+      let block = new Block(x, 10, 10, 10);
+
+      snake.snakeBody.push(block);
+    }
+    snake.head = snake.snakeBody.pop();
+
+    for (let i = 0; i < 600; i += 10) {
+      snake.moveS('right');
+    }
+
+    assert.equal(snake.die, true)
+  });
 });

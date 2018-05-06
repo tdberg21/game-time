@@ -18,6 +18,6 @@ describe('Game', () => {
     assert.equal(game.score, 0);
   });
   // test for win 
-  // gamesnake moves the x or y 
+  
   // 
 });
