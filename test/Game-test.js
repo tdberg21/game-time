@@ -6,9 +6,9 @@ describe('Game', () => {
 
   let game;
 
-  beforeEach('game', () => {
-    game = new Game();
-  });
+  beforeEach(() => {
+    game = new Game()
+  })
 
   it('should have default values', () => { 
 
@@ -16,6 +16,12 @@ describe('Game', () => {
     assert.equal(game.stopGame, false);
     assert.equal(game.lives, 3);
     assert.equal(game.score, 0);
+  });
+
+  it('should lose a life if the snake dies', () => {
+    game.gameSnake.die = true;
+    game.newLife();
+    assert.equal(game.lives, 2)
   });
   // test for win 
   
