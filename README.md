@@ -12,8 +12,8 @@ Recreate the classic game Snake using Object Oriented Programming.
 
 ##Playability Features
 
-[ ] Indicate when the game is over and won or lost
-[ ] Allow the user to start a new game
-[ ] Display a score (if applicable)
+[X] Indicate when the game is over and won or lost
+[X] Allow the user to start a new game
+[X] Display a score (if applicable)
 [ ] Include a clean UI surrounding the actual game interface itself (this might include instructions on how to play, a high score saved in localStorage, etc. Think of what would be most intuitive for your particular game.)
 
