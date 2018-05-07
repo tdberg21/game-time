@@ -1,3 +1,4 @@
+import localStorage from 'mock-local-storage';
 const chai = require('chai');
 const assert = chai.assert;
 const Game = require('../lib/Game.js')
@@ -5,9 +6,12 @@ const Game = require('../lib/Game.js')
 describe('Game', () => {
 
   let game;
+  
+  global.window = {}
+  window.localStorage = global.localStorage;
 
   beforeEach(() => {
-    game = new Game()
+    game = new Game();
   })
 
   it('should have default values', () => { 

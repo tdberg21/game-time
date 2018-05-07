@@ -4,47 +4,48 @@
   <meta charset="utf-8">
   <title>Snake</title>
   <link href="./game.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/png" href="http://www.trickedbythelight.com/tbtl/images/s-snaketrans.gif">
+  <link rel="icon" type="image/png" href="./lib/images/slytherin-logo.png">
 </head>
 <body>
   <section class="header-container">
     <h1>
       <span>
         <img class="snake-s" src="./lib/images/slytherin-logo.png" alt="Snake shaped like an s">
-      </span>lytherin Snake</h1>
-    </section>
-    <section class="main">
-      <article class="instructions-container">
-        <h2>Instructions</h2>
-        <p>Move the snake to eat the apples, don't hit the wall or you are dead!</p>
-        <p>You have three lives.</p>
-        <p>Press S to start.</p>
-        <p>Press P to Pause.</p>
-        <p>Press the arrow keys to move up, down, left, right.</p>
-      </article>
-      <canvas id="canvas" height="600" width="600"></canvas>
-      <article class="score-container">
-        <p class="score">lives:
-          <span id="lives-number">3</span>
-        </p>
-        <p class="score">score:
-          <span id="score-number">0</span>
-        </p>
-        <p class="score">high score:
-          <span id="high-number">0</span>
-        </p>
-      </article>
-    </section>
-    <section class="game-over-container">
-      <h3 class="game-over game-over-display">GAME OVER!!</h3>
-      <p class="reset-game-paragraph game-over-display">Press R to reset the game.</p>
-      <img src="https://media.giphy.com/media/lPU85ItA6KGYw/giphy.gif" alt="snape gif" class="game-over-image game-over-display" title="Voldemort sad gif">
-      <input type="text" class="high-score-name game-over-display" placeholder="Your name here">
-    </section>
-    <audio controls loop id="theme-song">
-      <source src="./lib/audio/harry-potter-theme.mp3" type="audio/ogg">
-    </audio>
-    <script src="main.bundle.js"></script>
-  </body>
-  </html>
-  
+      </span>lytherin 
+      <span><img class="snake-s" src="./lib/images/slytherin-logo.png" alt="Snake shaped like an s"></span> nake</h1>
+  </section>
+  <section class="main">
+    <article class="instructions-container">
+      <h2>Instructions</h2>
+      <p>Move the Slytherin Snake to steal the golden snitch, if you hit the wall or your self you lose a life!</p>
+      <p>You have three lives.</p>
+      <p>Press S to start.</p>
+      <p>Press P to Pause.</p>
+      <p>Press the arrow keys to move up, down, left, right.</p>
+    </article>
+    <canvas id="canvas" height="600" width="600"></canvas>
+    <article class="score-container">
+      <p class="score">lives:
+        <span id="lives-number">3</span>
+      </p>
+      <p class="score">score:
+        <span id="score-number">0</span>
+      </p>
+      <p class="score">Beat the current high score:
+        <span id="high-number">0</span>
+      </p>
+    </article>
+  </section>
+  <section class="game-over-container">
+    <h3 class="game-over game-over-display">GAME OVER!!</h3>
+    <p class="reset-game-paragraph game-over-display">Press R to reset the game.</p>
+    <img src="https://media.giphy.com/media/lPU85ItA6KGYw/giphy.gif" alt="snape gif" class="game-over-image game-over-display"
+    title="Voldemort sad gif">
+    <input type="text" class="high-score-name game-over-display" placeholder="Your name here">
+  </section>
+  <audio controls loop id="theme-song">
+    <source src="./lib/audio/harry-potter-theme.mp3" type="audio/ogg">
+  </audio>
+  <script src="main.bundle.js"></script>
+</body>
+</html>
