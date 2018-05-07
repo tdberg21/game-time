@@ -62,7 +62,7 @@ h2 {
   display: flex;
   position: absolute;
   flex-direction: column;
-  left: 560px;
+  left: 38%;
   top: 15%;
   color: red;
 }
