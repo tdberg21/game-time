@@ -1,7 +1,13 @@
 html {
   height: 100vh;
-  width: 100vw;
+  width: 98vw;
   background-color: #224633;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+body {
+  width: 95%;
+  position: fixed;
 }
 
 .main {
@@ -17,6 +23,7 @@ h1 {
   color: #8E888F;
   text-align: center;
   padding-right: 50px;
+  font-size: 40px;
 }
 
 h2 {
@@ -39,6 +46,7 @@ h2 {
   width: 25%;
   background-color: #8E888F;
   height: 100%;
+  color: #ffffff;
 }
 
 .score-container {
@@ -46,7 +54,7 @@ h2 {
   padding: 15px;
   font-size: 1.5rem; 
   background-color: #8E888F;
-
+  color: #ffffff;  
   height: 100%;
   width: 25%;
   display: flex;
@@ -78,4 +86,10 @@ h2 {
 
 .game-over-display {
   display: none;
+}
+
+#theme-song {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
