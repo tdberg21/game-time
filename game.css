@@ -4,61 +4,60 @@ html {
   background-color: #224633;
   /* background-image: url(http://cdn.playbuzz.com/cdn/7aa950b4-eaa0-417d-93af-3bd332dc8086/5e549d0d-aad1-4ec1-96c9-31e36f08af8c.jpg);
   background-position: center; */
-
-}
-
-.header-container {
-  width: 615.97px;
-  margin: auto;
-}
-
-h1 {
-  margin-left: 47%;
-  color: #8E888F;
-}
-
-.snake-s {
-  height: 50px;
-  vertical-align: text-bottom;
 }
 
 .main {
   display: flex;
 }
 
-.instructions-container {
-  margin-top: 65px;
-  padding: 10px;
-  width: 342px;
-  margin-left: 25px;
-  background-color: #8E888F;
-  height: 230px;
-  margin-right: 25px;
+#canvas {
+  border: 8px solid #8E888F;
+  /* margin: 10px; */
+  /* display: block; */
+  background-color: white;
+}
+
+h1 {
+  color: #8E888F;
+  text-align: center;
 }
 
 h2 {
   margin-top: 0;
 }
 
-#canvas {
-  border: 8px solid #8E888F;
-  margin: 10px;
-  display: block;
-  background-color: white;
+
+.snake-s {
+  height: 50px;
+  vertical-align: text-bottom;
+}
+
+.header-container {
+  width: 100vw;
+}
+
+.instructions-container {
+  margin: 65px 25px 0 25px;
+  padding: 10px;
+  width: 25%;
+  background-color: #8E888F;
+  height: 100%;
 }
 
 .score-container {
-  margin-top: 65px;
-  margin-left: 25px;
-  padding-top: 20px;
-  font-size: 30px; 
+  margin: 65px 25px 0 25px;
+  padding: 15px;
+  font-size: 1.5rem; 
   background-color: #8E888F;
-  height: 230px;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
 }
 
 .score {
-  display: inline;
   padding: 10px;
+  margin: 0;
 }
 
 .game-over-container {
