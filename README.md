@@ -65,3 +65,12 @@ HTML canvas
 This project is licensed under the MIT License 
 
 ### [Play here](https://www.google.com "play here")
+
+### On page load
+
+![Game start](./lib/images/snake-start.png "Game start")
+
+![Game play](./lib/images/snake-play.png "Game play")
+
+![Game over](./lib/images/snake-game-over.png "Game over")
+
