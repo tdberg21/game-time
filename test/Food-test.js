@@ -3,6 +3,12 @@ const assert = chai.assert;
 const Food = require('../lib/Food.js')
 
 describe('Food', () => {
+  it('should be an object', () => {
+    const food = new Food();
+
+    assert.isObject(food)
+  });
+
   it('should have default values', ()  => {
     const food = new Food();
 
