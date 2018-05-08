@@ -24,12 +24,6 @@ describe('Snake', () => {
   });
 
   it('should be able to move right', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
-
     snake.moveS('right'); 
     let actual = snake.tail.x;
     let expected = snake.head.x + snake.speed;
@@ -38,12 +32,6 @@ describe('Snake', () => {
   });
 
   it('should be able to move left', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
-
     snake.moveS('left');
     let actual = snake.tail.x;
     let expected = snake.head.x - snake.speed;
@@ -52,12 +40,6 @@ describe('Snake', () => {
   });
 
   it('should be able to move up', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
-
     snake.moveS('up');
     let actual = snake.tail.y;
     let expected = snake.head.y - snake.speed;
@@ -66,12 +48,6 @@ describe('Snake', () => {
   });
   
   it('should be able to move down', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
-
     snake.moveS('down');
     let actual = snake.tail.y;
     let expected = snake.head.y + snake.speed;
@@ -80,11 +56,6 @@ describe('Snake', () => {
   });
 
   it('should be able to grow if it eats an apple', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
     let oldSnakeLength = snake.snakeBody.length;
 
     snake.grow();
@@ -94,12 +65,6 @@ describe('Snake', () => {
   });
 
   it('should die if it hits itself', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
-
     snake.head = snake.snakeBody.shift();
     snake.snakeBody[0].x = snake.head.x;
     snake.killSelf();
@@ -108,13 +73,7 @@ describe('Snake', () => {
   });
 
   it('should die if it hits the wall', () => {
-    for (let x = 0; x < 40; x += 10) {
-      let block = new Block(x, 10, 10, 10);
-
-      snake.snakeBody.push(block);
-    }
     snake.head = snake.snakeBody.pop();
-
     for (let i = 0; i < 600; i += 10) {
       snake.moveS('right');
     }
