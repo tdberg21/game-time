@@ -12,18 +12,15 @@ describe('Snake', () => {
   })
 
   it('should have default values', () => {
-    assert.equal(snake.head, null);
+    assert.deepEqual(snake.snakeBody, [
+      new Block(10, 10, 10, 10),
+      new Block(20, 10, 10, 10),
+      new Block(30, 10, 10, 10),
+      new Block(40, 10, 10, 10)])
+    assert.equal(snake.head, snake.snakeBody[snake.snakeBody.length - 1]);
     assert.equal(snake.die, false); 
-    assert.equal(snake.speed, 10);   
-  });
-
-  it('should make snake with a length of 4 blocks', () => {
-    // Set up
-    
-    // Execution 
-    // snake.buildSnake();
-    // Assertion
-    // assert.equal(snake.snakeBody.length, 4);
+    assert.equal(snake.speed, 10);
+    assert.equal(snake.tail, snake.snakeBody[0])
   });
 
   it('should be able to move right', () => {
