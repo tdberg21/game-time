@@ -28,17 +28,11 @@ describe('Game', () => {
     assert.equal(game.gameSnake.tail.x, 110)
   });
 
-  it('should lose a life if the snake dies', () => {
+  it.only('should lose a life if the snake dies and reset to a new snake going right', () => {
     game.gameSnake.die = true;
     game.newLife();
 
     assert.equal(game.lives, 2);
-  });
-
-  it('if you lose a life the game resets to new snake going right', () => {
-    game.gameSnake.die = true;
-    game.newLife();
-
     assert.equal(game.direction, 'right');
   });
 
@@ -53,7 +47,7 @@ describe('Game', () => {
     assert.equal(game.score, 1);
   });
 
-  it('the snake should grow when it eats an apple', () => {
+  it('should grow when it eats an apple', () => {
     game.gameSnake.head.x = 100;
     game.currentFood.x = 100;
     game.gameSnake.head.y = 100;
