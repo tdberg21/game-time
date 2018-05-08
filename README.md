@@ -64,7 +64,7 @@ HTML canvas
 ## License
 This project is licensed under the MIT License 
 
-### [Play here](https://www.google.com "play here")
+### [Play here](https://tdberg21.github.io/game-time/ "play here")
 
 ### On page load
 
